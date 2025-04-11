@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Formulário de Produtos</h3>
+
+    <div>
+        <div class="mb-3">
+            <label for="id" class="form-label">ID:</label>
+            <input type="number" [(ngModel)]="produto.id" id="id"
+                class="form-control" placeholder="id ..">
+        </div>
+        
+        <div class="mb-3">
+            <label for="nome" class="form-label">NOME:</label>
+            <input type="text" [(ngModel)]="produto.nome" id="nome"
+                class="form-control" placeholder="nome do produto ..">
+        </div>
+
+        <div class="mb-3">
+            <label for="preco" class="form-label">PRECO:</label>
+            <input type="number" [(ngModel)]="produto.preco" id="preco"
+                class="form-control" placeholder="preço ..">
+        </div>
+
+        <button class="btn btn-primary" (click)="cadastrarProduto()">Cadastrar</button>
+    </div>
+</div>

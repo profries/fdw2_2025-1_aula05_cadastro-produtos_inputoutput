@@ -8,12 +8,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class FormProdutosComponent {
   produto: any = {};
-  listProdutos: any[] = [];
   @Output() onSalvar = new EventEmitter<any>();
 
   cadastrarProduto(){ 
     this.onSalvar.emit(this.produto);
-    this.listProdutos.push(this.produto);
     alert("Produto cadastrado com sucesso!")
     this.produto = {};
   }
